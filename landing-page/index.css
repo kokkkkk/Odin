@@ -1,7 +1,10 @@
 .header {
+    padding: 3% 10%;
     background-color: #1F2937;
     width: 100%;
 }
+
+/* Navigation bar */
 
 .nav-bar {
     display: flex;
@@ -31,4 +34,43 @@
     font-size: 18px;
     color: #E5E7EB;
     text-decoration: none;
+}
+
+/* Header main content */
+
+.header-main{
+    display: flex;
+    flex-direction: row;
+    padding: 3% 0%;
+    gap: 3%;
+}
+
+.left-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#header-text{
+    font-size: 48px;
+    font-weight: bolder;
+    color: #F9FAF8;
+}
+
+#content{
+    font-size: 18px;
+    color: #E5E7EB;
+}
+
+button{
+    width:40px;
+    border: none;
+    background-color: #3882F6;
+    border-radius: 4px;
+    color:#FFFFFF;
+    font-weight: bold;
+}
+
+.header-main img{
+    border-radius: 4px;
 }
