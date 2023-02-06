@@ -83,25 +83,32 @@ button{
     display: flex;
     flex-direction: column;
     background-color: #FFFFFF;
+    align-items: center;
 }
 
 .main-content #header{
     font-size: 36px;
     font-weight: bolder;
     color: #1F2937;
+    margin: 30px;
 }
 
 .boxes{
     display: flex;
     flex-direction: row;
+    width:50%;
+    padding:30px;
+    text-align: center;
 }
 
 .box{
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 .box img{
     width: 40px;
     height: 40px;
+    border: 58px solid black;
 }
