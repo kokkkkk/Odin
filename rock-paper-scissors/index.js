@@ -1,4 +1,7 @@
 
+let playerScore = 0;
+let computerScore = 0;
+
 function getComputerChoice(){
     let choices = ["Rock","Paper","Scissors"];
 
@@ -14,12 +17,25 @@ function playRound(playerSelection, computerSelection) {
             ||(playerSelection=="Paper" && computerSelection == "Rock")
             ||(playerSelection=="Scissors" && computerSelection == "Paper")
     ){
+        playerScore++;
         return "You Win! "+playerSelection + " beats " + computerSelection;  
     }else{
+        computerScore++;
         return "You Lose! "+ computerSelection + " beats " + playerSelection;  
     }
-  }
+}
    
-const playerSelection = "rock";
-const computerSelection = getComputerChoice();
-console.log(playRound(playerSelection, computerSelection));
+function game(){
+    for(let i = 0;i<5;i++){
+        console.log(playRound(prompt("Paper,Scissors,Rock?"),getComputerChoice()));
+    }
+    if(computerScore==playerScore)
+        console.log("Final result: Draw");
+    else if(computerScore>playerScore){
+        console.log("Final result: Computer win!");
+    }else{
+        console.log("Final result: Player win!");
+    }
+}
+
+game();
