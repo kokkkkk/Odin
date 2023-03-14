@@ -1,10 +1,9 @@
 .grid{
-    border-style: solid;
     padding: auto;
 }
 
 .changeToBlue{
-    background-color:blue;
+    background-color:black;
 }
 
 #container{
@@ -13,4 +12,5 @@
     grid-template-rows: repeat(16,auto); 
     width: 980px;
     height: 500px;
+    border: solid;
 }
