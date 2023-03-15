@@ -1,0 +1,16 @@
+.grid{
+    padding: auto;
+}
+
+.changeToBlue{
+    background-color:black;
+}
+
+#container{
+    display: grid; 
+    grid-template-columns: repeat(16,auto);
+    grid-template-rows: repeat(16,auto); 
+    width: 980px;
+    height: 500px;
+    border: solid;
+}
