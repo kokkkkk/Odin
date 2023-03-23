@@ -75,12 +75,25 @@ function addListener() {
       handleOperatorClicked(op);
     })
   );
+
+  const clearButton = document.querySelector("#clear");
+  clearButton.addEventListener("click", function () {
+    clear();
+  })
 }
 
 function populateDisplay(key) {
   displayValue += key.id;
 
   display.textContent = displayValue;
+}
+
+function clear(){
+  number1 = undefined;
+  number2 = 0;
+  isOperatorClicked = false;
+  displayValue = "";
+  display.textContent = "0";
 }
 
 addListener();
